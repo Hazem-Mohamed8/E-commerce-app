@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/imgs/characteristics/call.webp" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/wish-list.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <title>wish</title>
+  </head>
+
+  <body>
+        <!-- start loading  -->
+        <div class="loading w-full h-full  absolute">
+          <div class="spanner h-screen flex justify-center items-center">
+            <div class="dot-spinner">
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+              <div class="dot-spinner__dot"></div>
+          </div>
+          </div>
+      </div>
+         <!-- end loading -->
+
+  <!-- start header  -->
+  <nav class="low-bar sticky top-0 z-50">
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 contain"
+    >
+      <div class="nav-right">
+        <i class="fa-solid fa-bars"></i>
+        <span> CATEGORIES</span>
+        <ul class="drop">
+          <li><a href="#">Computers &amp; Laptops</a></li>
+          <li><a href="#">Cameras &amp; Photos</a></li>
+          <li><a href="#">Hardware</a></li>
+          <li><a href="#">Smartphones &amp; Tablets</a></li>
+          <li><a href="#">TV &amp; Audio</a></li>
+          <li><a href="#">Gadgets</a></li>
+          <li><a href="#">Car Electronics</a></li>
+          <li><a href="#">Video Games &amp; Consoles</a></li>
+        </ul>
+      </div>
+      <button
+        data-collapse-toggle="navbar-dropdown"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200  dark:focus:ring-gray-600"
+        aria-controls="navbar-dropdown"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg  rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+        >
+        <li>
+          <a
+          href="../index.html"
+          class="block py-2 px-3  rounded  md:border-0 "
+              aria-current="page"
+              >Home</a
+              >
+            </li>
+            <li>
+              <li>
+                <a
+                href="#Super-Deals"
+                  class="block py-2 px-3  rounded  md:border-0 "
+                  >Super Deals</a
+                >
+              </li>
+              <li>
+                <a
+                href="#New-arrival"
+                class="block py-2 px-3  rounded  md:border-0 "                    
+                >New Arrival</a
+                >
+              </li>
+              <button
+              id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 px-3  rounded md:border-0  md:p-0 md:w-auto dark:text-white "
+            >
+              Pages
+              <svg
+                class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-700  shadow w-44  dark:divide-gray-700"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-400 "
+                aria-labelledby="dropdownLargeButton"
+              >
+                <li class="border-b-2 border-stone-100">
+                  <a
+                  href="shop.html"
+                  class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500 "                        
+                  >Shop</a
+                  >
+                </li>
+                <li class="border-b-2 border-stone-100">
+                  <a
+                  href="product.html"
+                  class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500"                      
+                  >Product</a
+                  >
+                </li>
+                <li class="border-b-2  border-stone-100">
+                  <a
+                  href="blog.html"
+                  class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500"
+                    >Blog</a
+                  >
+                </li>
+                <li class="border-b-2 border-stone-100">
+                  <a
+                  href="cart.html"
+                  class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500"
+                    >Cart</a
+                  >
+                </li>
+              <li>
+              <a
+              href="contact.html"
+              class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500"
+              >Contact</a
+              >
+            </li>
+              </ul>
+            </div>
+          </li>
+         
+          <li>
+            <a
+              href="#"
+              class="block py-2 px-3  rounded  md:border-0 "
+              >Blog</a
+            >
+          </li>
+          <li>
+          </li>
+            <a
+              href="#"
+              class="block py-2 px-3  rounded  md:border-0 "
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end header  -->
+
+  <!-- start wishlist  -->
+  <section class="wishlist">
+    <div class="contain">
+      <div class="wishlist-content">
+        <div class="wishlist-top">
+          <div class="wishlist-header">
+            <div class="heading">
+              <h2>wish List</h2>
+            </div>
+            <div class="item-details-header">
+              <span>Item Details</span>
+              <span>Price</span>
+              <span>Remove or Add To Cart </span>
+            </div>
+          </div>
+          <div class="wishlist-bottom">
+            <div class="details-container">
+            
+             
+             
+            </div>
+            <div class="button-container">
+              <button id="clear-wishlist">Clear Wish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- end wishlist  -->
+
+    <!-- start footer  -->
+    <footer>
+      <!-- start  sa   sign-up -->
+      <!-- end sign-up -->
+      <div class="contain">
+        <div class="sign-up">
+          <div class="content">
+            <div class="row">
+              <div class="informationt">
+                <div class="image">
+                  <img src="../imgs/asset 54.webp" alt="" srcset="" />
+                </div>
+                <div class="text">
+                  <h5>Sign up for Newsletter</h5>
+                  <p class="text-gray-500">
+                    ...and receive %20 coupon for first shopping.
+                  </p>
+                </div>
+              </div>
+              <div class="form">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Email Address"
+                />
+                <button class="mainBtn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer">
+          <div class="footer-links">
+            <div class="ftr">
+              <h1 class="mainHead"><a href="#home">OneTech</a></h1>
+              <p>Got Question? Call Us 24/7</p>
+              <p>+38 068 005 3570</p>
+              <p>
+                <a href="hm010685452780@gmail.com">hm010685452780@gmail.com</a>
+              </p>
+              <address>
+                17 Princess Road, London Grester London NW18JR, UK
+              </address>
+              <ul class="social">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-google"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="ftr">
+              <h1>Find it Fast</h1>
+              <ul class="links">
+                <li><a href="">Computers & Laptops</a></li>
+                <li><a href="">Cameras & Photos</a></li>
+                <li><a href="">Hardware</a></li>
+                <li><a href="">Smartphones & Tablets</a></li>
+                <li><a href="">TV & Audio</a></li>
+                <li><a href="">Gadgets</a></li>
+                <li><a href="">Car Electronics</a></li>
+                <li><a href="">Video Games & Consoles</a></li>
+              </ul>
+            </div>
+            <div class="ftr">
+              <h1>Customer Care</h1>
+              <ul class="links">
+                <li><a href="">My Account</a></li>
+                <li><a href="">Order Tracking</a></li>
+                <li><a href="">Wish List</a></li>
+                <li><a href="">Customer Services</a></li>
+                <li><a href="">Returns / Exchange</a></li>
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Product Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copy-right">
+          <div class="contain">
+            <p>
+              Copyright &copy;2024 All rights reserved | This template is made
+              by <span>Hazem Mohamed</span>
+            </p>
+            <div class="payment">
+              <a href="#"><img src="../imgs/asset 55.webp" alt="" /></a>
+              <a href="#"><img src="../imgs/asset 56.webp" alt="" /></a>
+              <a href="#"><img src="../imgs/asset 57.webp" alt="" /></a>
+              <a href="#"><img src="../imgs/asset 58.webp" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer  -->
+
+    <script src="../js/wish.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>

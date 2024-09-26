@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/imgs/characteristics/call.webp" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./src/output.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>OneTech</title>
+  </head>
+  <body>
+    <!-- start loading  -->
+     <div class="loading w-full h-full  absolute">
+      <div class="spanner h-screen flex justify-center items-center">
+        <div class="dot-spinner">
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+          <div class="dot-spinner__dot"></div>
+      </div>
+      </div>
+  </div>
+     <!-- end loading -->
+    <!-- start header  -->
+    <header 
+    id="Home">
+      <section class="high-bar">
+        <div class="contain">
+          <div class="logo">
+            <a href="./index.html">OneTech</a>
+          </div>
+          <form>
+            <input
+              type="text"
+              id="search-field"
+              placeholder="Search For Products..."
+            />
+            <div class="dropdown-list">
+              <div onclick="">
+                <span id="all-categories">All Categories </span>
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <ul class="categories-list">
+                <li>All Categories</li>
+                <li>Computers</li>
+                <li>Laptops</li>
+                <li>Cameras</li>
+                <li>Hardware</li>
+                <li>Smartphones</li>
+              </ul>
+            </div>
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div class="shortcut">
+            <div class="short-wish" data-progress="0">
+              <img src="./imgs/asset 0.webp" alt=""  />
+              <a href="./html/wishlist.html" > wishlist</a>
+            </div>
+            <div class="short-cart">
+              <img src="./imgs/asset 1.webp" alt="" srcset="" />
+              <span id="in-cart">0</span>
+              <a href="./html/cart.html" id="total" data-progress="0">Cart</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    
+    <nav class="low-bar sticky top-0 z-50">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 contain"
+      >
+        <div class="nav-right">
+          <i class="fa-solid fa-bars"></i>
+          <span> CATEGORIES</span>
+          <ul class="drop">
+            <li><a href="#">Computers &amp; Laptops</a></li>
+            <li><a href="#">Cameras &amp; Photos</a></li>
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Smartphones &amp; Tablets</a></li>
+            <li><a href="#">TV &amp; Audio</a></li>
+            <li><a href="#">Gadgets</a></li>
+            <li><a href="#">Car Electronics</a></li>
+            <li><a href="#">Video Games &amp; Consoles</a></li>
+          </ul>
+        </div>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200  dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg  rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+          <li>
+            <a
+                href="#Home"
+                class="block py-2 px-3  rounded  md:border-0 "
+                aria-current="page"
+                >Home</a
+                >
+              </li>
+              <li>
+                <li>
+                  <a
+                  href="#Super-Deals"
+                    class="block py-2 px-3  rounded  md:border-0 "
+                    >Super Deals</a
+                  >
+                </li>
+                <li>
+                  <a
+                  href="#New-arrival"
+                  class="block py-2 px-3  rounded  md:border-0 "                    
+                  >New Arrival</a
+                  >
+                </li>
+                <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3  rounded md:border-0  md:p-0 md:w-auto dark:text-white "
+              >
+                Pages
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-700  shadow w-44  dark:divide-gray-700"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400 "
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li class="border-b-2 border-stone-100">
+                    <a
+                    href="shop.html"
+                    class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500 "                        
+                    >Shop</a
+                    >
+                  </li>
+                  <li class="border-b-2 border-stone-100">
+                    <a
+                    href="product.html"
+                    class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500"                      
+                    >Product</a
+                    >
+                  </li>
+                  <li class="border-b-2  border-stone-100">
+                    <a
+                    href="blog.html"
+                    class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="border-b-2 border-stone-100">
+                    <a
+                    href="./html/cart.html"
+                    class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500"
+                      >Cart</a
+                    >
+                  </li>
+                <li>
+                <a
+                href="contact.html"
+                class="block py-2 px-3  rounded  md:border-0 hover:text-cyan-500"
+                >Contact</a
+                >
+              </li>
+                </ul>
+              </div>
+            </li>
+           
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3  rounded  md:border-0 "
+                >Blog</a
+              >
+            </li>
+            <li>
+            </li>
+              <a
+                href="#"
+                class="block py-2 px-3  rounded  md:border-0 "
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end header  -->
+
+
+    <!-- start hero -->
+    <section class="hero">
+      <div class="contain">
+        <div class="innerLeft">
+          <div class="homeP1">
+            <span>NEW ERA OF SMARTPHONES</span>
+          </div>
+          <div class="homeP2">
+            <div class="price">
+              <div class="homePleft">
+                <span><del>$530</del></span>
+              </div>
+              <div class="homePright"><span>$460</span></div>
+            </div>
+            <div class="homePbuttom"><span>Apple Iphone 6s</span></div>
+            <button class="mainBtn">Shop Now</button>
+          </div>
+        </div>
+        <div class="innerRight">
+          <img src="./imgs/asset 2.webp" alt="" />
+        </div>
+      </div>
+      <a href="#Home" class="up">
+          <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </section>
+    <!-- end hero  -->
+
+    <!-- start free-bar  -->
+    <section class="free-bar">
+      <div class="contain">
+        <div class="box">
+          <div class="content">
+            <img src="./imgs/asset 3.webp" alt="" />
+            <div class="spans">
+              <span class="spanFree">Free Delivery</span
+              ><span class="innerSpan">from $50</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="./imgs/asset 4.webp" alt="" />
+            <div class="spans">
+              <span class="spanFree">Free Delivery</span
+              ><span class="innerSpan">from $50</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="./imgs/asset 5.webp" alt="" />
+            <div class="spans">
+              <span class="spanFree">Free Delivery</span
+              ><span class="innerSpan">from $50</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="./imgs/asset 6.webp" alt="" />
+            <div class="spans">
+              <span class="spanFree">Free Delivery</span
+              ><span class="innerSpan">from $50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end free-bar  -->
+      <!-- start super deals -->
+    </section>
+    <!-- end free-bar -->
+
+    <!-- start super deals -->
+    <section class="super-deals " id="Super-Deals">
+      <div class="contain">
+        <div class="scroling-side h-full ">
+          <div id="default-carousel" class="relative h-full " data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="control ">
+              <h5>Deals of the Week</h5>
+              <div class="flex space-x-2">
+                <button type="button" class="  flex items-center justify-center px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10  bg-transparent  group-focus:outline-none ">
+                        <svg class="w-4 h-4 text-slate-950  dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="   flex items-center justify-center px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                  <span class="inline-flex items-center justify-center w-10 h-10  bg-transparent  group-focus:outline-none ">
+                    <svg class="w-4 h-4 text-slate-950  dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+              </div>
+            </div>
+            <div class="relative  overflow-hidden h-full sliders">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="slider">
+                  <div class="flex justify-center items-center w-full h-2/5  mt-10">
+                    <img src="./imgs/asset 7.webp" alt="" srcset="" />
+                  </div>
+                  <div class="content w-full pt-6 flex flex-col gap-3 justify-center items-center">
+                    <div class="product flex justify-between w-full">
+                      <div>
+                        <p class="text-gray-500 text-sm">HeadPhone</p>
+                        <p class="text-slate-950 text-2xl mb-2 font-bold" >BeoPlay H7</p>
+                      </div>
+                      <div>
+                        <p class="text-gray-500 text-sm">$300</p>
+                        <p class="text-red-600 text-2xl mb-2 font-bold">$225</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 flex-col  w-full">
+                      <div class="available flex justify-between  w-full">
+                        <p class="text-gray-400">Available: <span class="text-gray-500 font-bold">6</span></p>
+                        <p class="text-gray-400">already sold: <span class="text-gray-500 font-bold">28</span></p>
+                      </div>
+                      <div class="outBar"><div class="inBar"></div></div>
+                    </div>
+                    <div class="herry flex justify-between items-center w-full">
+                      <div class="flex  flex-col ">
+                        <h6 class="mb-2 font-bold">Harry Up</h6>
+                        <p class="text-gray-500">offer ends in:</p>
+                      </div>
+                      <div class="time flex justify-center items-end ">
+                        <div class="flex justify-center items-center gap-1">
+                          <span class="text-slate-950 font-extrabold">03</span>:<span class="text-slate-950 font-extrabold">01</span>:<span class="text-slate-950 font-extrabold">55</span>:<span class="text-slate-950 font-extrabold time-span ">59</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                </div>  
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="slider">
+                  <div class="flex justify-center items-center w-full h-2/5  mt-10">
+                    <img src="./imgs/asset 7.webp" alt="" srcset="" />
+                  </div>
+                  <div class="content w-full pt-6 flex flex-col gap-3 justify-center items-center">
+                    <div class="product flex justify-between w-full">
+                      <div>
+                        <p class="text-gray-500 text-sm">HeadPhone</p>
+                        <p class="text-slate-950 text-2xl mb-2 font-bold" >BeoPlay H7</p>
+                      </div>
+                      <div>
+                        <p class="text-gray-500 text-sm">$300</p>
+                        <p class="text-red-600 text-2xl mb-2 font-bold">$225</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 flex-col  w-full">
+                      <div class="available flex justify-between  w-full">
+                        <p class="text-gray-400">Available: <span class="text-gray-500 font-bold">6</span></p>
+                        <p class="text-gray-400">already sold: <span class="text-gray-500 font-bold">28</span></p>
+                      </div>
+                      <div class="outBar"><div class="inBar"></div></div>
+                    </div>
+                    <div class="herry flex justify-between items-center w-full">
+                      <div class="flex  flex-col ">
+                        <h6 class="mb-2 font-bold">Harry Up</h6>
+                        <p class="text-gray-500">offer ends in:</p>
+                      </div>
+                      <div class="time flex justify-center items-end ">
+                        <div class="flex justify-center items-center gap-1">
+                          <span class="text-slate-950 font-extrabold">03</span>:<span class="text-slate-950 font-extrabold">01</span>:<span class="text-slate-950 font-extrabold">55</span>:<span class="text-slate-950 font-extrabold time-span ">59</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    </div>
+                </div>  
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="slider">
+                  <div class="flex justify-center items-center w-full h-2/5  mt-10">
+                    <img src="./imgs/asset 7.webp" alt="" srcset="" />
+                  </div>
+                  <div class="content w-full pt-6 flex flex-col gap-3 justify-center items-center">
+                    <div class="product flex justify-between w-full">
+                      <div>
+                        <p class="text-gray-500 text-sm">HeadPhone</p>
+                        <p class="text-slate-950 text-2xl mb-2 font-bold" >BeoPlay H7</p>
+                      </div>
+                      <div>
+                        <p class="text-gray-500 text-sm">$300</p>
+                        <p class="text-red-600 text-2xl mb-2 font-bold">$225</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 flex-col  w-full">
+                      <div class="available flex justify-between  w-full">
+                        <p class="text-gray-400">Available: <span class="text-gray-500 font-bold">6</span></p>
+                        <p class="text-gray-400">already sold: <span class="text-gray-500 font-bold">28</span></p>
+                      </div>
+                      <div class="outBar"><div class="inBar"></div></div>
+                    </div>
+                    <div class="herry flex justify-between items-center w-full">
+                      <div class="flex  flex-col ">
+                        <h6 class="mb-2 font-bold">Harry Up</h6>
+                        <p class="text-gray-500">offer ends in:</p>
+                      </div>
+                      <div class="time flex justify-center items-end ">
+                        <div class="flex justify-center items-center gap-1">
+                          <span class="text-slate-950 font-extrabold">03</span>:<span class="text-slate-950 font-extrabold">01</span>:<span class="text-slate-950 font-extrabold">55</span>:<span class="text-slate-950 font-extrabold time-span ">59</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    </div>
+                </div>  
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="slider">
+                  <div class="flex justify-center items-center w-full h-2/5  mt-10">
+                    <img src="./imgs/asset 7.webp" alt="" srcset="" />
+                  </div>
+                  <div class="content w-full pt-6 flex flex-col gap-3 justify-center items-center">
+                    <div class="product flex justify-between w-full">
+                      <div>
+                        <p class="text-gray-500 text-sm">HeadPhone</p>
+                        <p class="text-slate-950 text-2xl mb-2 font-bold" >BeoPlay H7</p>
+                      </div>
+                      <div>
+                        <p class="text-gray-500 text-sm">$300</p>
+                        <p class="text-red-600 text-2xl mb-2 font-bold">$225</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 flex-col  w-full">
+                      <div class="available flex justify-between  w-full">
+                        <p class="text-gray-400">Available: <span class="text-gray-500 font-bold">6</span></p>
+                        <p class="text-gray-400">already sold: <span class="text-gray-500 font-bold">28</span></p>
+                      </div>
+                      <div class="outBar"><div class="inBar"></div></div>
+                    </div>
+                    <div class="herry flex justify-between items-center w-full">
+                      <div class="flex  flex-col ">
+                        <h6 class="mb-2 font-bold">Harry Up</h6>
+                        <p class="text-gray-500">offer ends in:</p>
+                      </div>
+                      <div class="time flex justify-center items-end ">
+                        <div class="flex justify-center items-center gap-1">
+                          <span class="text-slate-950 font-extrabold">03</span>:<span class="text-slate-950 font-extrabold">01</span>:<span class="text-slate-950 font-extrabold">55</span>:<span class="text-slate-950 font-extrabold time-span ">59</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    </div>
+                </div>  
+              <!-- Item 5 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="slider">
+                  <div class="flex justify-center items-center w-full h-2/5  mt-10">
+                    <img src="./imgs/asset 7.webp" alt="" srcset="" />
+                  </div>
+                  <div class="content w-full pt-6 flex flex-col gap-3 justify-center items-center">
+                    <div class="product flex justify-between w-full">
+                      <div>
+                        <p class="text-gray-500 text-sm">HeadPhone</p>
+                        <p class="text-slate-950 text-2xl mb-2 font-bold" >BeoPlay H7</p>
+                      </div>
+                      <div>
+                        <p class="text-gray-500 text-sm">$300</p>
+                        <p class="text-red-600 text-2xl mb-2 font-bold">$225</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-1 flex-col  w-full">
+                      <div class="available flex justify-between  w-full">
+                        <p class="text-gray-400">Available: <span class="text-gray-500 font-bold">6</span></p>
+                        <p class="text-gray-400">already sold: <span class="text-gray-500 font-bold">28</span></p>
+                      </div>
+                      <div class="outBar"><div class="inBar"></div></div>
+                    </div>
+                    <div class="herry flex justify-between items-center w-full">
+                      <div class="flex  flex-col ">
+                        <h6 class="mb-2 font-bold">Harry Up</h6>
+                        <p class="text-gray-500">offer ends in:</p>
+                      </div>
+                      <div class="time flex justify-center items-end ">
+                        <div class="flex justify-center items-center gap-1">
+                          <span class="text-slate-950 font-extrabold">03</span>:<span class="text-slate-950 font-extrabold">01</span>:<span class="text-slate-950 font-extrabold">55</span>:<span class="text-slate-950 font-extrabold time-span ">59</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    </div>
+                </div>  
+          </div>
+          </div>
+        </div>
+        
+        <div class="products">
+          <div class="filter">
+            <ul>
+              <li><a  id="featured-super" class="filter-btn active">Featured</a></li>
+              <li><a  id="on-sale" class="filter-btn" >On Sale</a></li>
+              <li><a  id="best-rated" class="filter-btn">Best Rated</a></li>
+            </ul>
+          </div>
+          
+          <div class="items">
+            <div class="row frist-super-row">
+
+              <div class="icon">
+                <div class="content">
+                <div class="image"><img src="./imgs/asset 8.webp" alt="" /></div>
+                <div class="text">
+                  <p class="text-lg">$357</p>
+                  <p class="text-gray-400 text-sm">Headphone</p>
+                  <h3 class="text-lg">Huawei MediaPad</h3>
+                </div>
+                <button class="mainBtn add-cart" id="1">Add Cart</button>
+                </div>
+  
+              </div>
+              <div class="icon">
+                <div class="content">
+                <div class="image"><img src="./imgs/asset 9.webp" alt="" /></div>
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">SmartWatch</p>
+                    <h3 class="text-lg">Sony MDRZX310W</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="2">Add Cart</button>
+                </div>
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 10.webp" alt="" /></div>
+                 
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Smartphone</p>
+                    <h3 class="text-lg">Samsung J330F</h3>
+                  </div>
+                  
+                  <button class="mainBtn add-cart" id="16">Add Cart</button>
+                </div>
+                  
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 15.webp" alt="" /></div>
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Headphone</p>
+                    <h3 class="text-lg">Beoplay</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="7">Add Cart</button>
+                </div>
+                </div>
+            </div>
+            <div class="row secand-super-row"> 
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 11.webp" alt="" /></div>
+                  
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Ipod</p>
+                    <h3 class="text-lg">Transcend T.Sonic</h3>
+                  </div>
+              
+                  <button class="mainBtn add-cart" id="6">Add Cart</button>
+                </div>
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 12.webp" alt="" /></div>
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Mouse</p>
+                    <h3 class="text-lg">apoo T8 White</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="4">Add Cart</button>
+                </div>
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img  src="./imgs/asset 13.webp" alt="" /></div>
+              
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Camera</p>
+                    <h3 class="text-lg">Canon EF</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="5">Add Cart</button>
+                </div>
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 14.webp" alt="" /></div>
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Smartphone</p>
+                    <h3 class="text-lg">LUNA</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="3">Add Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end super deals -->
+
+    <!-- start Popular Categories -->
+    <section class="popular-categories">
+          <div class="contain">
+              <div class="right">
+                <h1 class="popCat">Popular Categories</h1>
+                <button class="mainBtn ">Full Categories</button>
+              </div>
+              <div class="left">
+                <div class="box">
+                  <div class="image">
+                    <img src="./imgs/asset 19.webp" alt="" srcset="" />
+                  </div>
+                  <p class="text-gray-600">Smartphones & Tablets</p>
+                </div>
+                <div class="box">
+                  <div class="image">
+                    <img src="./imgs/asset 20.webp" alt="" srcset="" />
+                  </div>
+                  <p class="text-gray-600">Computers & Laptops</p>
+                </div>
+                <div class="box">
+                  <div class="image">
+                    <img src="./imgs/asset 21.webp" alt="" srcset="" />
+                  </div>
+                  <p class="text-gray-600">Gadgets</p>
+                </div>
+                <div class="box">
+                  <div class="image">
+                    <img src="./imgs/asset 22.webp" alt="" srcset="" />
+                  </div>
+                  <p class="text-gray-600">Video Games & Consoles</p>
+                </div>
+                <div class="box">
+                  <div class="image">
+                    <img src="./imgs/asset 23.webp" alt="" srcset="" />
+                  </div>
+                  <p class="text-gray-600">Accessories</p>
+                </div>
+              </div>
+          </div>
+    </section>
+    <!-- end Popular Categories -->
+
+    <!-- start slider -->
+    <div class="slider">
+      <div
+        id="indicators-carousel"
+        class="relative w-full carousel"
+        data-carousel="static"
+      >
+        <!-- Carousel wrapper -->
+        <div class="contain relative overflow-hidden rounded-lg height-60 z-2">
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 z-2 ease-in-out flex max-[767px]:flex-col max-[767px]:gap-5"
+            data-carousel-item
+          >
+            <div
+              class="flex flex-col px-6 gap-3 justify-center ms-3 max-[767px]:w-full my-5 mx-auto"
+            >
+              <small class="text-xs text-gray-400">laptops</small>
+              <h1 class="text-4xl capitalize font-bold">macBook air 13</h1>
+              <p class="text-gray-400 text-sm leading-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Necessitatibus, dolores.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                
+              </div>
+              <button class="mainBtn">Explore</button>
+            </div>
+            <div class="flex justify-center items-center w-full">
+              <img src="./imgs/asset 24.webp" class="w-3/5" alt="..." />
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out flex max-[767px]:flex-col max-[767px]:gap-5"
+            data-carousel-item
+          >
+            <div
+              class="flex flex-col px-6 gap-3 justify-center ms-3 max-[767px]:w-full my-5 mx-auto"
+            >
+              <small class="text-xs text-gray-400">laptops</small>
+              <h1 class="text-4xl capitalize font-bold">macBook air 13</h1>
+              <p class="text-gray-400 text-sm leading-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Necessitatibus, dolores.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                
+              </div>
+              <button class="mainBtn">Explore</button>
+            </div>
+            <div class="flex justify-center items-center w-full">
+              <img src="./imgs/asset 24.webp" class="w-3/5" alt="..." />
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="hidden duration-700 ease-in-out flex max-[767px]:flex-col max-[767px]:gap-5"
+            data-carousel-item
+          >
+            <div
+              class="flex flex-col px-6 gap-3 justify-center ms-3 max-[767px]:w-full my-5 mx-auto"
+            >
+              <small class="text-xs text-gray-400">laptops</small>
+              <h1 class="text-4xl capitalize font-bold">macBook air 13</h1>
+              <p class="text-gray-400 text-sm leading-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Necessitatibus, dolores.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                
+              </div>
+              <button class="mainBtn">Explore</button>
+            </div>
+            <div class="flex justify-center items-center w-full">
+              <img src="./imgs/asset 24.webp" class="w-3/5" alt="..." />
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div
+            class="hidden duration-700 ease-in-out flex max-[767px]:flex-col max-[767px]:gap-5"
+            data-carousel-item
+          >
+            <div
+              class="flex flex-col px-6 gap-3 justify-center ms-3 max-[767px]:w-full my-5 mx-auto"
+            >
+              <small class="text-xs text-gray-400">laptops</small>
+              <h1 class="text-4xl capitalize font-bold">macBook air 13</h1>
+              <p class="text-gray-400 text-sm leading-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Necessitatibus, dolores.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                
+              </div>
+              <button class="mainBtn">Explore</button>
+            </div>
+            <div class="flex justify-center items-center w-full">
+              <img src="./imgs/asset 24.webp" class="w-3/5" alt="..." />
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div
+            class="hidden duration-700 ease-in-out flex max-[767px]:flex-col max-[767px]:gap-5"
+            data-carousel-item
+          >
+            <div
+              class="flex flex-col px-6 gap-3 justify-center ms-3 max-[767px]:w-full my-5 mx-auto"
+            >
+              <small class="text-xs text-gray-400">laptops</small>
+              <h1 class="text-4xl capitalize font-bold">macBook air 13</h1>
+              <p class="text-gray-400 text-sm leading-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Necessitatibus, dolores.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                
+              </div>
+              <button class="mainBtn">Explore</button>
+            </div>
+            <div class="flex justify-center items-center w-full">
+              <img src="./imgs/asset 24.webp" class="w-3/5" alt="..." />
+            </div>
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2 control-slider"
+        >
+          <button
+            id="111"
+            type="button"
+            class="w-3 h-3 rounded-full !bg-cyan-500 hover:bg-sky-700"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            id="112"
+            type="button"
+            class="w-3 h-3 rounded-full !bg-cyan-500"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            id="113"
+            type="button"
+            class="w-3 h-3 rounded-full !bg-cyan-500"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            id="114"
+            type="button"
+            class="w-3 h-3 rounded-full !bg-cyan-500"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+          <button
+            id="115"
+            type="button"
+            class="w-3 h-3 rounded-full !bg-cyan-500"
+            aria-current="false"
+            aria-label="Slide 5"
+            data-carousel-slide-to="4"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/80 dark:group-hover:bg-whitegroup-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/80 dark:group-hover:bg-whitegroup-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4L1 1"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <!-- end  slider -->
+    <section class="arrival" id="New-arrival">
+      <div class="contain">
+        <div class="filter">
+          <h1>Hot New Arrival</h1>
+          <div class="rightList">
+            <ul>
+              <li><a  id="arr-featured"  class="filter-btn active">Featured</a></li>
+              <li><a  id="audio-video"  class="filter-btn ">Audio & Video</a></li>
+              <li><a  id="lap"  class="filter-btn ">Laptops & Computers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="content">
+          <div class="items">
+            <div class="row frist-arr-row">
+
+              <div class="icon">
+                <div class="content">
+                <div class="image"><img src="./imgs/asset 8.webp" alt="" /></div>
+                <div class="text">
+                  <p class="text-lg">$357</p>
+                  <p class="text-gray-400 text-sm">Headphone</p>
+                  <h3 class="text-lg">Huawei MediaPad</h3>
+                </div>
+                <button class="mainBtn add-cart" id="1">Add Cart</button>
+                </div>
+  
+              </div>
+              <div class="icon">
+                <div class="content">
+                <div class="image"><img src="./imgs/asset 9.webp" alt="" /></div>
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">SmartWatch</p>
+                    <h3 class="text-lg">Sony MDRZX310W</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="2">Add Cart</button>
+                </div>
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 10.webp" alt="" /></div>
+                 
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Smartphone</p>
+                    <h3 class="text-lg">Samsung J330F</h3>
+                  </div>
+                  
+                  <button class="mainBtn add-cart" id="16">Add Cart</button>
+                </div>
+                  
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 15.webp" alt="" /></div>
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Headphone</p>
+                    <h3 class="text-lg">Beoplay</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="7">Add Cart</button>
+                </div>
+                </div>
+            </div>
+            <div class="row secand-arr-row"> 
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 11.webp" alt="" /></div>
+                  
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Ipod</p>
+                    <h3 class="text-lg">Transcend T.Sonic</h3>
+                  </div>
+              
+                  <button class="mainBtn add-cart" id="6">Add Cart</button>
+                </div>
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 12.webp" alt="" /></div>
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Mouse</p>
+                    <h3 class="text-lg">apoo T8 White</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="4">Add Cart</button>
+                </div>
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img  src="./imgs/asset 13.webp" alt="" /></div>
+              
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Camera</p>
+                    <h3 class="text-lg">Canon EF</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="5">Add Cart</button>
+                </div>
+              </div>
+              <div class="icon">
+                <div class="content">
+                  <div class="image"><img src="./imgs/asset 14.webp" alt="" /></div>
+                  <div class="text">
+                    <p class="text-lg">$357</p>
+                    <p class="text-gray-400 text-sm">Smartphone</p>
+                    <h3 class="text-lg">LUNA</h3>
+                  </div>
+                  <button class="mainBtn add-cart" id="3">Add Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightBttm">
+            <img src="./imgs/asset 25.webp" alt="" srcset="" />
+            <div class="text flex flex-col gap-2 justify-center items-center mx-auto my-4">
+              <p class="font-bold text-lg">$579</p>
+              <p class="text-gray-500"> Smartphone</p>
+              <p class="font-bold text-lg"> Luna Smartphone</p>
+            </div>
+            <div class="star">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trends">
+      <div class="contain">
+            <h1>Trends in 2024</h1>
+            <div class="slider swiper">
+              <div class="trend-container ">
+                <div class="trand-boxs swiper-wrapper">
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="13"><i class="fa-solid fa-heart"></i>
+                      </a>
+                      <div class="image">
+                        <img src="./imgs/asset 27.webp" alt="Smartphone" />
+                      </div>
+                      <p class="text-gray-500 text-sm">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="1"><i class="fa-solid fa-heart"></i>
+                        
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 37.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="16"><i class="fa-solid fa-heart"></i>
+                        
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 30.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="7"><i class="fa-solid fa-heart"></i>
+                        
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 28.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="12"><i class="fa-solid fa-heart"></i>
+                       
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 45.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p> 
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="13"><i class="fa-solid fa-heart"></i>
+                       
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 27.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="10"><i class="fa-solid fa-heart"></i>
+                        
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 18.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="5"><i class="fa-solid fa-heart"></i>
+                        
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 13.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="6"><i class="fa-solid fa-heart"></i>
+                        
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 14.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="3"><i class="fa-solid fa-heart"></i>
+                        
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 11.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="16"><i class="fa-solid fa-heart"></i>
+                        
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 10.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box swiper-slide">
+                    <div class="content">
+                      <a class="heart" id="2"><i class="fa-solid fa-heart full-heart"></i>
+                        
+                      </a>                      <div class="image">
+                        <img src="..\imgs\asset 9.webp" alt="" srcset="" />
+                      </div>
+                      <p class="text-gray-500 text-sm ">Smartphone</p>
+                      <div class="space">
+                        <p>Jumps White</p>
+                        <p>$379</p>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Navigation buttons -->
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            
+    
+         </div> 
+      </div>
+    </section>
+
+    <!-- start logos -->
+    <section class="logos">
+      <div class="contain">
+        <div class="scroll">
+          <!-- Original Content -->
+            <div class="box">
+              <img src="./imgs/asset 46.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 47.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 48.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 49.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 50.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 51.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 52.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 53.webp" alt="" srcset="" />
+            </div>
+  
+          <!-- Duplicate the content for seamless scrolling -->
+          <div class="box">
+              <img src="./imgs/asset 46.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 47.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 48.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 49.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 50.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 51.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 52.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 53.webp" alt="" srcset="" />
+            </div>
+          
+        </div>
+        <div class="scroll">
+          <!-- Original Content -->
+          <div class="box">
+              <img src="./imgs/asset 46.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 47.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 48.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 49.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 50.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 51.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 52.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 53.webp" alt="" srcset="" />
+            </div>
+  
+          <!-- Duplicate the content for seamless scrolling -->
+          <div class="box">
+              <img src="./imgs/asset 46.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 47.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 48.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 49.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 50.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 51.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 52.webp" alt="" srcset="" />
+            </div>
+            <div class="box">
+              <img src="./imgs/asset 53.webp" alt="" srcset="" />
+            </div>
+        </div>
+
+      
+    </div>
+      </div>
+
+    </section>
+    <!-- end logos  -->
+
+
+    
+    <!-- start footer  -->
+    <footer>
+    <!-- start  sa   sign-up -->
+    <!-- end sign-up -->
+    <div class="contain">
+        <div class="sign-up">
+          <div class="content">
+            <div class="row">
+              <div class="informationt">
+                <div class="image">
+                  <img src="./imgs/asset 54.webp" alt="" srcset="" />
+                </div>
+                <div class="text">
+                  <h5>Sign up for Newsletter</h5>
+                  <p class="text-gray-500">...and receive %20 coupon for first shopping.</p
+                  >
+                </div>
+              </div>
+              <div class="form">
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Enter Your Email Address"
+                  />
+                  <button class="mainBtn ">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-footer">
+          <div class="footer-links">
+            <div class="ftr">
+              <h1 class="mainHead"><a href="#home">OneTech</a></h1>
+              <p>Got Question? Call Us 24/7</p>
+              <p>+38 068 005 3570</p>
+              <p
+                ><a href="hm010685452780@gmail.com"
+                  >hm010685452780@gmail.com</a
+                ></p
+              >
+              <address>17 Princess Road, London Grester London NW18JR, UK</address>
+              <ul class="social">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-google"></i></a>
+                </li>
+              </ul>
+            </div>
+              <div class="ftr">
+                <h1>Find it Fast</h1>
+                <ul class="links">
+                  <li><a href="">Computers & Laptops</a></li>
+                  <li><a href="">Cameras & Photos</a></li>
+                  <li><a href="">Hardware</a></li>
+                  <li><a href="">Smartphones & Tablets</a></li>
+                  <li><a href="">TV & Audio</a></li>
+                  <li><a href="">Gadgets</a></li>
+                  <li><a href="">Car Electronics</a></li>
+                  <li><a href="">Video Games & Consoles</a></li>
+                </ul>
+              </div>
+              <div class="ftr">
+                <h1>Customer Care</h1>
+                <ul class="links">
+                  <li><a href="">My Account</a></li>
+                  <li><a href="">Order Tracking</a></li>
+                  <li><a href="">Wish List</a></li>
+                  <li><a href="">Customer Services</a></li>
+                  <li><a href="">Returns / Exchange</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">Product Support</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="contain">
+                  <p>
+                    Copyright 	&copy;2024 All rights reserved | This template is made by <span>Hazem Mohamed</span> 
+                  </p>
+                <div class="payment">
+                  <a href="#"><img src="./imgs/asset 55.webp" alt="" /></a>
+                  <a href="#"><img src="./imgs/asset 56.webp" alt="" /></a>
+                  <a href="#"><img src="./imgs/asset 57.webp" alt="" /></a>
+                  <a href="#"><img src="./imgs/asset 58.webp" alt="" /></a>
+                </div>
+          </div>
+        </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/scrolling.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </body>
+</html>
